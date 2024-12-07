@@ -34,10 +34,19 @@ TARGET_SCREEN_HEIGHT := 3040
 TARGET_SCREEN_WIDTH := 1440
 
 ## Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+
+# Infinity
+INFINITY_BUILD_TYPE := OFFICIAL
+INFINITY_MAINTAINER := FrEeRuNnEr4EvEr
+TARGET_BUILD_VIMUSIC := true
+TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GAPPS := true
+TARGET_HAS_UDFPS := true
+TARGET_BUILD_GOOGLE_TELEPHONY := true
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := lineage_beyond1lte
+PRODUCT_NAME := infinity_beyond1lte
 PRODUCT_DEVICE := beyond1lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G973F
